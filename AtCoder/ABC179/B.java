@@ -1,4 +1,4 @@
-package ABC179;
+package AtCoder.ABC179;
 
 // 提出 #16890488を参考に解きなおし
 //多次元配列を使う

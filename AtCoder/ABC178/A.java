@@ -1,4 +1,4 @@
-package ABC178;
+package AtCoder.ABC178;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package ABC179;
+package AtCoder.ABC179;
 import java.util.*;
 
 public class A {
