@@ -1,4 +1,7 @@
 package AtCoder.ABC181;
+
+// 反省点：愚直解で解かない。整数の和の合計 n(n+1)/2を上手く使うこと
+
 import java.util.*;
 
 public class B {
