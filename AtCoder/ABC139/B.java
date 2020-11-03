@@ -7,16 +7,14 @@ public class B {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
+        int q = B / A ;
+        int availavle = (q + 1) * A;
         int ans = 0;
 
-        if (A < B) {
-            if(B % A == 0){
-                ans = B / A;
-            } else {
-                ans = (B / A) +1;
-            }
+        if (availavle >= B) {
+            ans = q + 1;
         } else {
-            ans = 1;
+            ans = q + 2;
         }
         
 
