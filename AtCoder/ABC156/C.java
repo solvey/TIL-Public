@@ -3,6 +3,7 @@ import java.util.*;
 
 //やっぱり愚直解だなぁ
 //minを順番に入れていく奴は、最初でかい値を入れておくと行けそう
+//愚直解かも知れんけど、解説でも同じような解き方をしているからいいか
 
 public class C {
     public static void main(String[] args) {
