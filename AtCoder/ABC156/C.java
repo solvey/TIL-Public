@@ -1,6 +1,9 @@
 package AtCoder.ABC156;
 import java.util.*;
 
+//やっぱり愚直解だなぁ
+//minを順番に入れていく奴は、最初でかい値を入れておくと行けそう
+
 public class C {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
