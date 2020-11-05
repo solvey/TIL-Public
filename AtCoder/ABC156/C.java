@@ -8,13 +8,13 @@ public class C {
         int N = sc.nextInt();
         int X[] = new int [N+1];
         
-        int min = 0;
+        int min = 999999;
 
         for(int i=0; i<N; i++){
             X[i] = sc.nextInt();
         }
 
-        for(int i=1; i<=100; i++){
+        for(int i=0; i<100; i++){
             int HP_2 = 0;
             int HP = 0;
             for(int j=0; j<N; j++){
