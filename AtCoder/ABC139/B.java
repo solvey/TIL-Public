@@ -7,15 +7,23 @@ public class B {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
-        int q = B / A ;
-        int availavle = (q + 1) * A;
+        // int A = Integer.parseInt(sc.next());
+        // int B = Integer.parseInt(sc.next());
+        int availavle = 1;
         int ans = 0;
 
-        if (availavle >= B) {
-            ans = q + 1;
-        } else {
-            ans = q + 2;
+        while (availavle < B) {
+                availavle = availavle + A - 1;
+                ans ++;
         }
+            // if (availavle >= B) {
+            //     ans = q + 1;
+            // } else {
+                
+                // ans = q + 2;
+            //}
+    
+        
         
 
         System.out.println(ans);
