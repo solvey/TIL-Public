@@ -4,40 +4,32 @@ public class B {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        List<Integer> A = new ArrayList<>();
-        List<Integer> B = new ArrayList<>();
+        int[] A = new int[N];
+        int[] B = new int[N];
 
         for(int i=0; i<N; i++){
-            A.add(sc.nextInt());
-            B.add(sc.nextInt());
+            A[i] = sc.nextInt();
+            B[i] = sc.nextInt();
         }
 
-        int minA = 0;
-        int minB = 0;
-        int keyA = 0;
-        int keyB = 0;
+        int result = Integer.MAX_VALUE;
 
         for(int i=0; i<N; i++){
-            if(A.get(i) <= minA){
-                minA = A.get(i);
-                keyA = i;
-            } 
+            for(int j=0; j<N; j++){
+                int sum = 0;
+                if (i==j) {
+                    sum = A[i] + B[j];
+                } else {
+                    sum = Math.max(A[i], B[j]);
+                }
+
+                result = Math.min(result, sum);
+            }
         }
 
-        for(int i=0; i<N; i++){
-            if(B.get(i) <= minB){
-                minB = B.get(i);
-                keyB = i;
-            } 
-        }
-
-        if (keyA == keyB) {
-            System.out.println(minA + minB);
-        } else {
-            System.out.println(Math.max(minA, minB));
-        }
-
+        System.out.println(result);
 
         sc.close();
     }
 }
+
