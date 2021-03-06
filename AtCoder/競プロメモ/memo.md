@@ -11,3 +11,6 @@ char c = S.charAt(i);
 * 最小値が欲しいからといってすぐMinを使うんじゃない
     * if(小<大>)
       大=小という手法もある
+
+## テク
+* int num = Integer.MAX_VALUE
